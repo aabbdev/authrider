@@ -1,4 +1,4 @@
-FROM python:3.9-alpine AS build-env
+FROM python:3.9 AS build-env
 WORKDIR /app
 COPY requirements.txt ./
 RUN pip3 install --disable-pip-version-check --no-cache-dir -r requirements.txt
